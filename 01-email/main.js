@@ -31,9 +31,7 @@ for (let i = 0; i < invitati.length; i++){
     if (invitati[i] == emailUtente){
         //se la mail è presente, allora:
         emailPresente = true;
-        break; // aggiungo un break per fermare il ciclo una volta trovata la mail
-    } else {
-        emailPresente = false;
+        // l'uso di break è una forzatura e non è consigliato, era sufficiente rimuovere l'else in questo caso.
     }
 
 }
